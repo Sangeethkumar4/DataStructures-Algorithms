@@ -17,6 +17,7 @@ public class LinkedList {
 				current = current.next;
 			}
 		}
+		//in.close();
 		return head;
 	}
 	
@@ -26,5 +27,15 @@ public class LinkedList {
 			System.out.println(current.data);
 			current = current.next;
 		}
+	}
+	
+	public int findLength(Node head) {
+		int count = 0;
+		Node curr = head;
+		while(curr != null) {
+			count++;
+			curr = curr.next;
+		}
+		return count;
 	}
 }
