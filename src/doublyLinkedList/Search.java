@@ -7,16 +7,14 @@ public class Search {
 	  
 	   private static int search(Node doublyLinkedList, int data) {
 		   int position = 0;
-		   boolean flag = false;
 		   while(doublyLinkedList != null) {
 			   position++;
 			   if(doublyLinkedList.data == data) {
-				   flag = true;
-				   break;
+				   return position;
 			   }
 			   doublyLinkedList = doublyLinkedList.next;
 		   }
-		   return flag == true ? position : -1;
+		   return -1;
 	   }
 	   
 
