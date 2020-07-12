@@ -39,6 +39,15 @@ public class DoublyLinkedList {
 		}
 		return doublyLinkedList;
    	}
+   	
+   	public static int length(Node doublyLinkedList) {
+   		int position = 0;
+   		while(doublyLinkedList!=null) {
+   			position++;
+   			doublyLinkedList = doublyLinkedList.next;
+   		}
+   		return position++;
+   	}
 	
 	
 	public static void main(String[] args) {

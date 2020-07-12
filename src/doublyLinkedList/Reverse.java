@@ -11,7 +11,7 @@ public class Reverse {
 	}
 
 	private static Node reverse(Node doublyLinkedList) {
-		Node prev = null, curr = doublyLinkedList;
+		Node prev = null;
 		
 		while(doublyLinkedList != null) {
 			Node next = doublyLinkedList.next;
